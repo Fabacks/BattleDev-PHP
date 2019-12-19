@@ -7,6 +7,18 @@ require_once 'run.php';
 function ContestResponse($input) 
 {
     // Implémentez votre code ci-dessous
+
+    /*
+    * Le but est de trouver le batton le plus petit qui correspond au nom de la personne qui a perdu. 
+    * Pour cela, stocke le nombre de participant
+    * Puis on boucle sur chaque participant pour avoir le baton le plus petit. Sachant que le baton le plus grand peut faire 1000cm.
+    * On test avec la valeur que l'on a si plus petit, on garde le nom de la personne.
+    * Puis on affiche son nom
+    *
+    * Info :
+    * On démmarre le for à 1, car la premeire ligne est le nombre de participant.
+    *
+    */
     $nbParticipant = $input[0];
     $valeurMin = 10001;
     $nomPersonne = "";
