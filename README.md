@@ -8,6 +8,8 @@ Il s'appuie sur les fichiers d'exemple fournis lors de la Battle Dev pour tester
 
 Le script d'origine est fait pour du Js, disponible à cette adresse : [BattleDev-vscode](https://github.com/javascriptdezero/BattleDev-vscode).
 
+Les exercices sont extrait du site officiel du concours [Isograd](https://www.isograd.com/FR/solutionconcours.php).
+
 ## Quel intérêt ?
 
 L'éditeur fourni lors de la Battle Dev ne permet pas de déboguer et est très sommaire. C'est beaucoup plus confortable de coder dans son IDE préféré avec toutes les extensions qui facilitent le développement, l'auto-complétion etc.
