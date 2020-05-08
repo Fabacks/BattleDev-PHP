@@ -1,0 +1,4 @@
+3 3
+AND I0 I1
+NOT I2
+OR G0 G1

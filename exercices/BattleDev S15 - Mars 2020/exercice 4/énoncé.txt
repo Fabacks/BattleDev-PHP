@@ -1,0 +1,65 @@
+Objectif
+
+Sacha aime vraiment beaucoup jouer à Pogemon avec vous, mais vous commencez à vous lasser de perdre à chaque fois... vous décidez humblement de tricher. Connaissant à l'avance l'ordre des cartes du deck de Sacha, vous devez trouver un ordre pour vos cartes vous permettant de gagner à coup sûr, (si cela est possible).
+
+Règles de Pogemon :
+
+Chaque joueur commence la partie avec un deck de Pogemons, indiqués uniquement par leur type, par exemple, type feu, type eau. Chaque tour de jeu, les deux joueurs présentent sur la table la carte se trouvant sur le dessus de leur deck :
+- Le joueur qui pose la carte avec le type le plus puissant bat son adversaire à cette manche, il conserve sa carte et la carte reste au combat pour le prochain tour (i.e. elle reste au sommet de la pile du deck!)
+- Quant au perdant, il perd sa carte et s'en débarrasse définitivement (disons que le Pogemon doit aller se reposer dans sa Pogeball).
+- Si aucun des types n'est plus puissant que l'autre ou si les deux types sont identiques, alors les deux Pogemons sont éliminés et sont perdus pour le jeu.
+Vous ne pouvez pas gagner par KO mutuel, vous gagnez si et seulement si votre adversaire n'a plus de Pogemon et qu'il vous en reste au moins un dans votre deck « en vie ».
+
+Liste des types
+
+- Feu
+- Eau
+- Plante
+- Glace
+- Poison
+- Sol
+- Vol
+
+Règles sur les types
+
+- Feu vs Eau: Eau l'emporte
+- Feu vs Plante: Feu l'emporte
+- Feu vs Glace: Feu l'emporte
+
+- Eau vs Plante: Plante l'emporte
+- Eau vs Sol: Sol l'emporte
+
+- Plante vs Poison: Plante l'emporte
+- Plante vs Sol: Sol l'emporte
+- Plante vs Vol: Plante l'emporte
+
+- Si le résultat d'un affrontement entre deux types n'est pas précisé, alors aucun type n'est plus puissant que l'autre par défaut.
+
+Données
+
+Entrée
+
+Ligne 1 : Un entier N, inférieur ou égal à 10 indiquant le nombre de cartes contenues dans les decks de chacun des joueurs.
+Ligne 2 : N chaînes de caractères (en minuscules) séparées par des espaces décrivant le type de Pogemon, dont la liste est donnée ci-dessus, de chaque carte de Sacha, du sommet vers le fond de la pile de carte.
+Ligne 3 : N chaînes de caractères (en minuscules) séparées par des espaces décrivant le type de Pogemon, dont la liste est donnée ci-dessus, de chacune de vos cartes, l'ordre ici n'est pas important !
+
+Sortie
+
+Les Pogemon de votre deck de cartes séparés par des espaces, dans un ordre vous garantissant de gagner s'il en existe un, ou -1 si cela n'est pas possible.
+
+N.B. : Plusieurs solutions peuvent exister, vous pouvez choisir une solution quelconque.
+
+Exemple
+
+
+Entrée
+
+3
+feu plante eau
+feu feu feu
+
+Sortie
+
+-1
+
+Comme toutes nos cartes sont identiques (feu), il n'y a qu'un seul ordre possible pour notre deck . Donc il suffit juste de voir si on peut gagner avec feu feu feu. D'abord feu contre feu annule les deux cartes. Ensuite, feu contre plante, nous gagnons, donc nous gardons feu sur la table et il reste eau à Sacha, or on ne pourra jamais vaincre eau avec feu, donc nous perdons toutes nos cartes de type feu contre l'eau et nous perdons définitivement.
