@@ -1,0 +1,32 @@
+Objectif
+
+Grâce à votre travail, il a été possible d'infiltrer le réseau et d'extraire des informations de la machine d'un des ingénieurs.
+Une partie de ces informations est cependant protégée par un système un peu particulier : en partant d'une suite de lettres donnée, vous ne pouvez qu'effectuer deux opérations pour entrer la clé secrète.
+Ces opérations sont :
+- Décaler toutes les lettres de la suite de la même valeur dans l'alphabet (par exemple, ABC -> BCD)
+- Décaler toutes les lettres de la suite vers la gauche (par exemple, ABC -> BCA)
+Connaissant une approximation de la clé secrète, vous voulez ainsi trouver la combinaison que l'on peut obtenir de cette manière qui a le plus de lettres en commun (et bien placées) avec cette dernière.
+
+Données
+
+Entrée
+
+Ligne 1 : un entier N représentant la taille des deux suites de lettres (compris entre 1 et 50)
+Ligne 2 : la valeur initiale de la suite de lettres
+Ligne 3 : la valeur de la suite à approcher
+Les suites de lettres seront toujours données en minuscules.
+
+Sortie
+
+Sur une ligne, la suite de lettres la plus proche possible de la suite à approcher, à partir de la suite initiale et à l'aide des transformations décrites ci-dessus.
+
+Exemple
+
+Pour les suites de lettres suivantes :
+9
+cyxcrclqj
+petitchat
+
+
+La séquence la plus proche que l'on peut générer est : potitchat.
+Pour cela, on décale toutes les lettres d'un cran vers la gauche pour obtenir yxcrclqjc, puis on décale toutes les lettres de 9 places en arrière dans l'alphabet pour obtenir potitchat, avec une correspondance de 9 lettres sur 10.

@@ -1,0 +1,47 @@
+Objectif
+
+Grâce à votre aide, la machine a pû être localisée à temps, et vous avez découvert qu'une attaque sur la société est imminente.
+Il vous reste une fenêtre de tir très courte pour la neutraliser, et faute de mieux, c'est à vous que revient cette mission.
+Les rétro-ingénieurs de votre entreprise ont pu identifier une faille dans son fonctionnement : il vous est possible de forcer le processeur de la machine à sauter des instructions, et ainsi de la faire planter avant qu'elle ne fasse des dégâts.
+Comme la plupart des processeurs, cette machine possède 4 registres (nommés A, B, C et D) qui lui permettent de sauvegarder 4 entiers naturels (zéro inclus) en mémoire.
+
+Elle est aussi dotée d'une unité de calcul qui lui permet d'effectuer les opérations suivantes :
+
+- ADD a, b, c : *c = *a + *b
+- CPY a, b : *b = *a
+- MOV a,b : *b = *a ; *a = 0 -- Pour cette commande, on garantit que a est toujours différent de b
+
+La notation *x représente la valeur à l'adresse contenue dans x (par exemple, si x vaut A, alors *x est la valeur du registre A)
+
+Il a été determiné que si les registres atteignent une certaine valeur à la fin du cycle, la machine plantera et le plan des attaquants sera déjoué.
+Votre mission est donc d'identifier les instructions à sauter pour atteindre l'état final demandé à partir de l'état initial des registres.
+N'importe quelle solution valide sera acceptée.
+
+Données
+
+Entrée
+
+Ligne 1 : Un entier N compris entre 1 et 20, le nombre d'instructions du programme.
+Ligne 2 : 4 entiers A, B, C et D représentant l'état initial de chaque registre.
+Ligne 3 à N+2 : L'instruction sous forme de chaine de caractères, et ses arguments le cas échant (sous forme de caractères)
+Ligne N+3 : L'état final théorique des registres à la fin du programme
+
+Sortie
+
+Sur une ligne, les indices (de 1 à N) des opérations à supprimer pour obtenir le résultat attendu.
+
+Exemple
+
+Pour l'entrée :
+5
+1 1 2 0
+ADD B C D
+ADD A D D
+MOV D A
+CPY A B
+CPY A C
+0 0 0 0
+
+
+Pour obtenir ce résultat et désamorçer l'engin, il faut enlever les opérations suivantes 1 et 2 (les deux opérations de type ADD) :
+1 2

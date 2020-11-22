@@ -1,0 +1,38 @@
+Objectif
+
+Oups ! Les agissements suspects de votre agent ont mis la puce à l'oreille du patron de l'organisation.
+Cependant, ce dernier n'a pour le moment que des suspicions et s'est contenté de s'éloigner au plus possible de votre collègue, et en particulier sur le réseau informatique.
+C'est ce que vous comptez utiliser pour enfin l'identifier : après vous être procuré un plan du réseau, vous n'avez plus qu'à trouver le poste le plus éloigné de celui de l'agent infiltré pour identifier le patron.
+
+Données
+
+Entrée
+
+Ligne 1 : trois entiers N, M et a, respectivement le nombre de postes sur le réseau, le nombre de connexions entre les postes et le numéro du poste de l'agent. Ils sont compris entre 1 et 1000
+Lignes 2 à M+1 : deux entiers distincts i et j (compris entre 1 et N), les numéros de postes qui sont connectés entre eux
+On vous garantit qu'il existe toujours un chemin entre deux postes.
+
+Sortie
+
+Sur une ligne, les numéros des postes situés à la distance maximale du poste de l'agent, triés dans l'ordre croissant et séparés par des espaces.
+
+Exemple
+
+Pour le réseau suivant (représenté ci-dessous) :
+10 12 4
+1 2
+2 7
+4 7
+4 6
+5 6
+5 7
+2 10
+3 8
+9 10
+3 9
+7 8
+5 8
+
+
+
+Le poste le plus éloigné du poste n°4 est le : 9, à une distance de 4.

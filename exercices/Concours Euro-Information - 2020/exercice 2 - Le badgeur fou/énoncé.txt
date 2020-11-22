@@ -1,0 +1,30 @@
+Objectif
+
+Après avoir identifié l'intrus, le service de sécurité a réussi à récupérer l'historique de son badge. Le but est de retrouver la cible de l'intrus.
+Pour brouiller les pistes, le badge a été utilisé de très nombreuses fois, mais on peut supposer que le sabotage a eu lieu vers le lecteur sur lequel le badge a été le plus utilisé.
+
+Données
+
+Entrée
+
+Ligne 1 : un entier positif N pour le nombre de numéros d'entrées du journal
+Lignes 2 à N+1 : Le numéro du lecteur de badge où le badge de l'intrus a été utilisé (sous forme d'entier, entre 1 et 50000).
+
+Sortie
+
+Ligne 1 : le numéro du lecteur qui a été le plus utilisé
+En cas d'égalité, vous pouvez renvoyer n'importe quelle bonne réponse.
+
+Exemple
+
+Pour l'entrée :
+6
+2
+7
+8
+7
+8
+8
+
+Le sabotage a sans doute eu lieu vers le lecteur :
+8

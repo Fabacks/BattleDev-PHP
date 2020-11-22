@@ -1,0 +1,25 @@
+
+Un individu malveillant s'est introduit dans le centre de données alors que les lecteurs de badges de la porte d'entrée avaient mal été configurés.
+En temps normal, seuls les badges dont le nombre finit par 555 sont autorisés à entrer.
+On vous demande donc d'identifier le seul numéro de badge de la liste qui ne respecte pas cette condition.
+Données
+
+Entrée
+
+Ligne 1 : un entier positif N pour le nombre de numéros de badges à tester. N est compris entre 1 et 100.
+Lignes 2 à N+1 : chaque numéro de badge, sous forme de chaîne de 8 chiffres.
+
+Sortie
+
+Ligne 1 : les 8 chiffres du numéro de badge de l'intrus
+
+Exemple
+
+Pour l'entrée :
+3
+12345555
+20000555
+00001755
+
+L'intrus a le numéro de badge :
+00001755

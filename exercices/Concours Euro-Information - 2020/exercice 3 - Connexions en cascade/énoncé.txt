@@ -1,0 +1,36 @@
+Objectif
+
+Maintenant que l'on a trouvé dans quelle salle le malfrat est passé à l'acte, il faut encore trouver quelle machine il a piratée.
+Afin de réduire les coûts, votre entreprise a adopté une stratégie de mise à jour sous forme de "pair-à-pair" (P2P) en arborescence.
+Lorsqu'une mise à jour est effectuée sur un serveur, il pourra ensuite partager cette dernière avec zéro, un ou plusieurs autres serveurs (mais il ne recevra pas de mise à jour de ces derniers).
+Pour éviter les conflits, chaque serveur ne peut reçevoir des mises à jour que d'un seul autre serveur.
+Sachant cela, il paraît clair qu'un individu malintentionné aurait intérêt à prendre le contrôle du serveur qui lui permettra de répliquer une fausse mise à jour sur le plus d'autres machines possible (directement et indirectement).
+Votre mission est donc maintenant d'identifier cette machine afin de pouvoir mieux la protéger.
+En cas d'égalité entre deux serveurs, on prendra celui dont le numéro est le plus petit.
+
+Données
+
+Entrée
+
+Ligne 1 : deux entiers N et M représentant le nombre de machines et le nombre de connexions entre elles. N et M seront toujours compris entre 1 et 50 000.
+Ligne 2 à M+1 : deux entiers distincts a et b représentant un partage de mise à jour de a sur b (a et b sont des numéros de noeuds compris entre 1 et N)
+
+Sortie
+
+Ligne 1 : le numéro du serveur qui peut propager une mise à jour au plus grand nombre d'autres machines
+
+Exemple
+
+Pour l'entrée (représentée par le graphe orienté ci-dessous):
+10 8
+2 9
+9 3
+3 7
+7 4
+9 6
+9 1
+1 8
+10 5
+
+
+La cible la plus intéressantes est le serveur 2 puisqu'il permet d'infecter sept autres serveurs.

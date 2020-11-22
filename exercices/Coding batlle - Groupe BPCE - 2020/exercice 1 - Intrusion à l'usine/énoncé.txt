@@ -1,0 +1,32 @@
+Objectif
+
+L'infame groupe mafieux "L'Equipe Roquette" a infiltré une usine de téléphones mobiles dans le but de voler vos secrets et ceux de vos concitoyens.
+Afin de ne pas éveiller trop de soupçons, seule une ligne de production a été compromise, mais tous les appareils qu'elle produit ont été infectés.
+Cependant, le système d'exploitation d'un téléphone infecté a un numéro de version légèrement différent de celui des autres.
+A partir d'un échantillon de téléphones, écrivez un programme qui trouve celui dont le numéro de version est différent des autres.
+
+Données
+
+Entrée
+
+Ligne 1 : un entier N compris entre 3 et 100, le nombre de téléphones de l'échantillon
+Lignes 2 à N+1 : deux entiers naturels p et v, respectivement le numéro de la ligne de production du téléphone et la version de son OS
+
+On vous garantit qu'une seule ligne de production produit des téléphones d'une version différente.
+
+Sortie
+
+Ligne 1: un entier P, le numéro de la ligne de production compromise
+
+
+Exemple
+
+Pour l'échantillon suivant :
+5
+1 13
+27 13
+14 13
+42 14
+15 13
+
+La ligne de production compromise est celle de numéro 42

@@ -1,0 +1,61 @@
+Objectif
+
+Une analyse approfondie du serveur infecté a permis de conclure qu'une machine espionne a été installée au cinquième étage du bâtiment.
+A partir d'images de vidéosurveillance, on a réussi à représenter tout l'étage vu du dessus.
+L'enquête ayant permis de déterminer la forme de la machine, il faut maintenant arriver à la localiser sur ce plan.
+La machine à retrouver est un rectangle plein, de dimension 2x4.
+Votre programme doit retourner les coordonnées du coin supérieur-gauche de chaque rectangle de 2x4 (ce doit être la forme exacte), en comptant aussi les rectangles de 4x2 puisque l'on ne sait pas dans quel sens sera installée la machine.
+Le coin supérieur-gauche du plan a pour coordonnées (1,1)
+
+Données
+
+Le plan de l'étage est représenté par une grille, et chaque couleur d'objet par un caractère différent.
+Un objet est défini par une forme contiguë de taille maximale d'une même couleur (si deux cases d'une même couleur se "touchent" en diagonale, elles ne font pas partie du même objet)
+
+Entrée
+
+Ligne 1 : deux entiers N et M représentant respectivement le nombre de lignes et de la colonne de la grille.
+Ligne 2 à N+1 : une chaîne de M caractères sans espace, représentant la i-ème ligne de la grille
+
+Les symboles utilisés pour représenter les couleurs sont les suivants : !"#$%&'()*+,-./:;<=>?@[]\\^_`{|}~
+N et M seront toujours compris entre 5 et 100.
+
+Sortie
+
+Sur une première ligne, un entier qui correspond aux nombres d'objets trouvés (zéro si aucune forme correspondante n'existe)
+Sur une ligne par solution, les coordonnées des objets de la forme indiquée dans n'importe quel ordre.
+
+Exemple
+
+Pour l'entrée :
+6 20
+...@@@@.......***...
+....@@@@@.....***...
+.!!.........**......
+.!!..####...**......
+.!!!.####...**......
+.!!.........**......
+
+
+Les deux objets de la bonne forme (constitués de # et de *) sont situés en 4 6 et 3 13.
+La sortie est donc :
+2
+4 6
+3 13
+
+
+
+Pour l'entrée :
+4 8
+....####
+....####
+####....
+####....
+
+
+Les 4 rectangles sont de la bonne forme et ne se touchent pas. Une bonne réponse est donc :
+4
+1 1
+3 1
+1 5
+3 5

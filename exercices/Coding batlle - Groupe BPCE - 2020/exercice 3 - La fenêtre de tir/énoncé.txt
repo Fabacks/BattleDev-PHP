@@ -1,0 +1,28 @@
+Objectif
+
+Félicitations ! Grâce à votre programme, les analystes ont pu identifier plusieurs messages codés cachés dans le virus, y compris l'adresse du quartier général de l'Equipe Roquette.
+Après plusieurs jours à surveiller les allers et venues aux abords du bâtiment, vos collègues ont pu établir le planning de chacun des ingénieurs qui surveillent le trafic réseau de l'organisation.
+Votre mission est maintenant de créer un programme qui identifie - si il existe - le créneau le plus long pendant lequel aucun d'entre eux n'est présent dans le bâtiment.
+Vous devez considérer que le planning donné est valable tous les jours, et que ce créneau peut se trouver pendant la nuit (de 23 heures à 2 heures du matin par exemple)
+
+Données
+
+Entrée
+
+Ligne 1 : un entier N le nombre d'ingénieurs (compris entre 1 et 20)
+Lignes 2 à N+1 : les horaires de chaque ingénieur au format hh:mm-hh:mm (chaque borne est incluse, c'est-à-dire que si un ingénieur part à 13h59 et un autre arrive à 14h00, le bureau n'est jamais vide)
+
+Sortie
+
+Sur une ligne, la plus grande plage horaire sans ingénieur, au format hh:mm-hh:mm (avec les zéros non-significatifs des heures et des minutes), ou le message IMPOSSIBLE si quelqu'un est toujours présent.
+En cas d'égalité, vous devrez renvoyer la plage horaire qui se termine le plus tôt dans la journée.
+
+Exemple
+
+Pour le planning suivant :
+3
+07:00-14:00
+09:00-16:00
+14:00-23:00
+
+La plus grande fenêtre de tir se situe sur la plage : 23:01-06:59
