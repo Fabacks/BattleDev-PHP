@@ -1,5 +1,10 @@
 <?php
 
+// Inclusion de tous les polyfills utiles du dossier
+foreach( glob("polyfill/*.php") as $filename):
+    include $filename;
+endforeach;
+
 require_once 'run.php';
 
 // -- Développez votre code dans la fonction ContestResponse ci-après
