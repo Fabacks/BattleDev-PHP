@@ -1,0 +1,13 @@
+------------------------------------------------------------------------------------------------
+Retourne un segment de chaîne
+    substr ( string $string , int $start [, int $length ] ) : string|false
+
+
+------------------------------------------------------------------------------------------------
+Calcule la taille d'une chaîne
+Doc : https://www.php.net/manual/fr/function.strlen.php
+    strlen ( string $string ) : int
+
+Code & sortie : 
+    $str = 'abcdef';
+    echo strlen($str); // 6

@@ -1,0 +1,60 @@
+------------------------------------------------------------------------------------------------
+Compte le nombre de valeurs d'un tableau
+Doc : https://www.php.net/manual/fr/function.array-count-values.php
+    array_count_values ( array $array ) : array
+    
+Code : 
+    $array = array(1, "hello", 1, "world", "hello");
+
+Sortie :
+    Array
+    (
+        [1] => 2
+        [hello] => 2
+        [world] => 1
+    )
+
+
+------------------------------------------------------------------------------------------------
+Retourne toutes les clés ou un ensemble des clés d'un tableau
+Doc : https://www.php.net/manual/fr/function.array-keys.php
+    array_keys ( array $array , mixed $search_value [, bool $strict = FALSE ] ) : array
+
+Code : 
+    $array = array(0 => 100, "color" => "red");
+    print_r(array_keys($array));
+    
+    array_keys($array, min($array));
+
+Sortie : 
+    (
+        [0] => 0
+        [1] => color
+    )
+
+
+------------------------------------------------------------------------------------------------
+Recherche dans un tableau la clé associée à la première valeur
+Doc : https://www.php.net/manual/fr/function.array-search.php
+    array_search ( mixed $needle , array $haystack [, bool $strict = FALSE ] ) : mixed
+
+Code & sortie :
+    $array = array(0 => 'blue', 1 => 'red', 2 => 'green', 3 => 'red');
+
+    $key = array_search('green', $array); // $key = 2;
+    $key = array_search('red', $array);   // $key = 1;
+
+
+
+------------------------------------------------------------------------------------------------
+Récupère la première clé d'un tableau
+Doc : https://www.php.net/array_key_first
+PHP min : 7.3
+    array_key_first ( array $array ) : mixed
+
+Code 
+    $array = ['a' => 1, 'b' => 2, 'c' => 3];
+    $firstKey = array_key_first($array);
+
+Sortie :
+    "a"
